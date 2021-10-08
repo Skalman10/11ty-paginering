@@ -1,3 +1,5 @@
+const moment = require('moment');
+
 module.exports = function(eleventyConfig) {
     return {
         dir: {
@@ -6,3 +8,7 @@ module.exports = function(eleventyConfig) {
         }
     };
 };
+eleventyConfig.addFilter('dateFilter', (value) => {
+    moment.locale;
+    return moment(value).format('LL')
+})
