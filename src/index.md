@@ -2,4 +2,7 @@
 layout: base.njk
 ---
 
-# asd
+# LOL 😂
+
+{{ joke.joke }}
+{{ datefilter }}
